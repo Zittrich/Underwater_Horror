@@ -131,6 +131,8 @@ public class FirstPersonController : MonoBehaviour
 
     #endregion
 
+    private AudioSource _audioSource;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -165,6 +167,8 @@ public class FirstPersonController : MonoBehaviour
         {
             crosshairObject.gameObject.SetActive(false);
         }
+
+        _audioSource = GetComponent<AudioSource>();
 
         #region Sprint Bar
 
@@ -377,10 +381,14 @@ public class FirstPersonController : MonoBehaviour
             // Will allow head bob
             if (targetVelocity.x != 0 || targetVelocity.z != 0 && isGrounded)
             {
+                if(!_audioSource.isPlaying) 
+                    _audioSource.Play();
+
                 isWalking = true;
             }
             else
             {
+                _audioSource.Stop();
                 isWalking = false;
             }
 
