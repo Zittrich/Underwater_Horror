@@ -476,7 +476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 532957838}
   m_Layer: 0
-  m_Name: Scenery
+  m_Name: '>Scenery<'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -500,7 +500,7 @@ Transform:
   - {fileID: 408614480}
   - {fileID: 502402166}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &621893031
 GameObject:
@@ -918,6 +918,39 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1362447350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1362447351}
+  m_Layer: 0
+  m_Name: '>Player<'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1362447351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362447350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 495.50693, y: 5.315408, z: 509.20856}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4459864849706750423}
+  - {fileID: 4459864850702015434}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1429948112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,7 +1154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1811871191}
   m_Layer: 0
-  m_Name: Audio
+  m_Name: '>Audio<'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1141,7 +1174,7 @@ Transform:
   m_Children:
   - {fileID: 1200981246}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1947402560
 GameObject:
@@ -5962,7 +5995,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4459864850702015434}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &4459864849706750420
 GameObject:
@@ -6020,8 +6053,8 @@ RectTransform:
   - {fileID: 4459864850531038712}
   - {fileID: 4459864850426537299}
   - {fileID: 693682582}
-  m_Father: {fileID: 4459864850702015434}
-  m_RootOrder: 1
+  m_Father: {fileID: 1362447351}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6483,7 +6516,7 @@ GameObject:
   - component: {fileID: 4459864850702015432}
   - component: {fileID: 4459864850702015433}
   - component: {fileID: 4459864850702015437}
-  - component: {fileID: 4459864850702015436}
+  - component: {fileID: 4459864850702015440}
   - component: {fileID: 4459864850702015438}
   - component: {fileID: 4459864850702015439}
   m_Layer: 0
@@ -6556,16 +6589,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4459864850702015430}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 500, y: 1, z: 500}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.4930725, y: -4.315408, z: -9.208557}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4459864849749592016}
-  - {fileID: 4459864849706750423}
   - {fileID: 1947402563}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 1362447351}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4459864850702015435
 MeshFilter:
@@ -6575,62 +6607,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4459864850702015430}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4459864850702015436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4459864850702015430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d90ba6530d9bfda47abb4610956b2f44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCamera: {fileID: 4459864849948160338}
-  fov: 60
-  invertCamera: 0
-  cameraCanMove: 1
-  mouseSensitivity: 2
-  maxLookAngle: 50
-  lockCursor: 1
-  crosshair: 0
-  crosshairImage: {fileID: 21300000, guid: be4ce60e2c9768c44b9b10b9c5258045, type: 3}
-  crosshairColor: {r: 1, g: 1, b: 1, a: 1}
-  enableZoom: 1
-  holdToZoom: 1
-  zoomKey: 324
-  zoomFOV: 30
-  zoomStepTime: 5
-  playerCanMove: 1
-  walkSpeed: 1.25
-  maxVelocityChange: 10
-  enableSprint: 0
-  unlimitedSprint: 1
-  sprintKey: 304
-  sprintSpeed: 7
-  sprintDuration: 5
-  sprintCooldown: 0.5
-  sprintFOV: 80
-  sprintFOVStepTime: 10
-  useSprintBar: 1
-  hideBarWhenFull: 1
-  sprintBarBG: {fileID: 4459864849860808016}
-  sprintBar: {fileID: 4459864850369926916}
-  sprintBarWidthPercent: 0.3
-  sprintBarHeightPercent: 0.02
-  enableJump: 1
-  jumpKey: 32
-  jumpPower: 2
-  enableCrouch: 0
-  holdToCrouch: 1
-  crouchKey: 306
-  crouchHeight: 0.75
-  speedReduction: 0.5
-  enableHeadBob: 1
-  joint: {fileID: 4459864849749592016}
-  bobSpeed: 2.5
-  bobAmount: {x: 0, y: 0.15, z: 0}
 --- !u!54 &4459864850702015437
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6657,9 +6633,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 834dc2c55c4d8da4782b337c8ecdd9c2, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6768,3 +6744,28 @@ AudioLowPassFilter:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4459864850702015440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4459864850702015430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21b60ce4f1c80ff449644cb06f0c2dc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerCamera: {fileID: 4459864849948160338}
+  Fov: 60
+  MouseSensitivity: 2
+  MaxLookAngle: 50
+  JumpKey: 32
+  JumpPower: 5
+  StepClips:
+  - {fileID: 8300000, guid: 12cf502e28e763847939ce5f9d6c4d4e, type: 3}
+  WalkSpeed: 1.5
+  MaxVelocityChange: 1
+  Joint: {fileID: 4459864849749592016}
+  BobSpeed: 4
+  BobAmount: {x: 0.1, y: 0.05, z: 0}
